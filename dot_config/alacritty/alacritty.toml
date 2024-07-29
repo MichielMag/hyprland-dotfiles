@@ -34,19 +34,19 @@ draw_bold_text_with_bright_colors = true
 size = 12
 
 [font.normal]
-family = "monospace"
-style = "Regular"
+family = "JetBrainsMono Nerd Font Mono"
+style = "Light"
 
 [font.bold]
-family = "monospace"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "monospace"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "monospace"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Bold Italic"
 
 [selection]
