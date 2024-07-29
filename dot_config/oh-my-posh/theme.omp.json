@@ -73,10 +73,16 @@
 					"background": "p:rp-m-pine",
 					"foreground": "p:rp-m-text",
 					"background_templates": [
-						"{{ if or (.Working.Changed) (.Staging.Changed) }}p:rp-m-iris{{ end }}",
+						"{{ if or (.Working.Changed) (.Staging.Changed) }}p:rp-m-foam{{ end }}",
 						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}{{ end }}",
-						"{{ if gt .Ahead 0 }}p:rp-m-foam{{ end }}",
+						"{{ if gt .Ahead 0 }}p:rp-m-gold{{ end }}",
 						"{{ if gt .Behind 0 }}p:rp-m-love{{ end }}"
+					],
+					"foreground_templates": [
+						"{{ if or (.Working.Changed) (.Staging.Changed) }}p:rp-m-hl-high{{ end }}",
+						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:rp-m-text{{ end }}",
+						"{{ if gt .Ahead 0 }}p:rp-m-hl-high{ end }}",
+						"{{ if gt .Behind 0 }}p:rp-m-hl-high{{ end }}"
 					],
 					"properties": {
 						"branch_max_length": 25,
