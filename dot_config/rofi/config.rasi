@@ -1,5 +1,12 @@
 @import "default"
 
+configuration {
+	show-icons:                     true;
+	sidebar-mode:                   true;
+    icon-theme:                     "Flat-Remix-Blue-Dark";
+    font:                           "SFNS Display 13";
+}
+
 * {
 	bg: #232136;
 	cur: #2a273f;
@@ -24,6 +31,7 @@
 	selected-active-background: @active-background;
 	separatorcolor: @active-background;
 	bordercolor: @ora;
+    show-icons: true;
 }
 
 #window {

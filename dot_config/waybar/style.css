@@ -1,0 +1,14 @@
+@import "./rose-pine-moon.css";
+* {
+    /* reference the color by using @color-name */
+    background: @base;
+    opacity: 0.9;
+  }
+  
+  #memory {
+    color: @foam;
+  }
+  
+  #temperature {
+    color: @rose;
+  }
