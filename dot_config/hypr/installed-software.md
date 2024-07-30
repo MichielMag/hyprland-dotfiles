@@ -10,3 +10,5 @@
 - Fish
 - oh-my-posh
 - alacritty
+
+- swaylock
