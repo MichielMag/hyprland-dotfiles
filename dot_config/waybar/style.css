@@ -1,14 +1,30 @@
-@import "./rose-pine-moon.css";
-* {
-    /* reference the color by using @color-name */
-    background: @base;
-    opacity: 0.9;
-  }
-  
-  #memory {
-    color: @foam;
-  }
-  
-  #temperature {
-    color: @rose;
-  }
+@import "./styling.css";
+@import "./metrics.css";
+
+
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+
+
+/* you can set a style on hover for any module like this */
+

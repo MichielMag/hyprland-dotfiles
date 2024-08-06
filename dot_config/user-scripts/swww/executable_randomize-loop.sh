@@ -17,12 +17,7 @@ INTERVAL=300
 
 swww clear
 
-find "$1" -type f \
-    | while read -r img; do
-        echo "$((RANDOM % 1000)):$img"
-    done \
-    | sort -n | cut -d':' -f2- \
-    | while read -r img; do
-        swww img "$img"
-        sleep $INTERVAL
-    done
+while true; do
+    ./randomize.sh $1
+    sleep $INTERVAL
+done

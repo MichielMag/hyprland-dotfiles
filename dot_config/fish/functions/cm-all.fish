@@ -1,4 +1,4 @@
-function test-cm
+function cm-all
     argparse h/help c/cd p/push -- $argv
     or return
  
@@ -17,6 +17,7 @@ function test-cm
     chezmoi add ~/.config/user-scripts/
     chezmoi add ~/.config/rofi/
     chezmoi add ~/.config/waybar/
+    #chezmoi add ~/.config/eww/
     chezmoi add ~/.config/swaylock
     chezmoi add ~/.config/fish
 

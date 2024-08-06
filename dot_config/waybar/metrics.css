@@ -1,0 +1,17 @@
+window#waybar {
+    margin-top: 4px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+.module {
+    padding: 0 10px;
+}
+
