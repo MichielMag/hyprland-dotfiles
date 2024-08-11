@@ -19,6 +19,7 @@ function cm-all
     chezmoi add ~/.config/waybar/
     #chezmoi add ~/.config/eww/
     chezmoi add ~/.config/swaylock
+    chezmoi add ~/.config/swaync
     chezmoi add ~/.config/fish
 
     # If -h or --help is given, we print a little help text and return
