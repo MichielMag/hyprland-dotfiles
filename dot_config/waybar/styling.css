@@ -26,7 +26,7 @@ tooltip {
 .modules-left,
 .modules-center,
 .modules-right {
-    background-color: @base;
+    background-color: @surface;
 
     border: @rose solid 1px;
     border-radius: 10px;
