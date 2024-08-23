@@ -14,6 +14,7 @@ function cm-all
     set list (cat ~/.workspace/config.code-workspace | jq ".folders | .[] | .path")
     for i in $list
         set trimmed (string trim -c \" "$i")
+        echo "Checking $trimmed"
         chezmoi add $trimmed
     end
 
