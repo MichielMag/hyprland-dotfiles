@@ -11,16 +11,12 @@ function cm-all
         end
     end
 
-    chezmoi add ~/.config/alacritty/
-    chezmoi add ~/.config/hypr/
-    chezmoi add ~/.config/oh-my-posh/
-    chezmoi add ~/.config/user-scripts/
-    chezmoi add ~/.config/rofi/
-    chezmoi add ~/.config/waybar/
-    #chezmoi add ~/.config/eww/
-    chezmoi add ~/.config/swaylock
-    chezmoi add ~/.config/swaync
-    chezmoi add ~/.config/fish
+    set list (cat ~/.workspace/config.code-workspace | jq ".folders | .[] | .path")
+    for i in $list
+        set trimmed (string trim -c \" "$i")
+        chezmoi add $trimmed
+    end
+
 
     # If -h or --help is given, we print a little help text and return
     if set -ql _flag_help

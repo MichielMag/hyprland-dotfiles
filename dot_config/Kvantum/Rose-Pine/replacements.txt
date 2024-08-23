@@ -1,0 +1,5 @@
+#1e1f29 #232136 $base	
+#282a36 #2a273f $surface
+#252a3f78 #2a273f $surface
+
+#10121c #2a273f $surface
