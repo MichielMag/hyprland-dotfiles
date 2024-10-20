@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+bemoji -t | cut -d ' ' -f 1 | tr -d '\n' | ydotool key
